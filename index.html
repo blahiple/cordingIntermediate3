@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planet Hunters</title>
+    <meta name="description" content="奪われた故郷の星を取り戻せ 壮大なSFファンタジー">
+
+    <!-- OGP -->
+    <meta property="og:site_name" content="Planet Hunters">
+    <meta property="og:title" content="Planet Hunters">
+    <meta property="og:description" content="奪われた故郷の星を取り戻せ 壮大なSFファンタジー">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://blahiple.github.io/cordingIntermediate3/asset/img/ogp/ogp.webp">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- favicon -->
+    <link rel="icon" href="https://blahiple.github.io/cordingIntermediate3/favicon.webp" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600;700&family=Noto+Sans+JP:wght@500;900&display=swap" rel="stylesheet">
+
+    <!-- Resset CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+
+    <!-- my css -->
+    <link href="https://blahiple.github.io/cordingIntermediate3/css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Loading -->
+    <div class="loading">
+      <div class="loading__box">
+        <div class="loading__square loading__square--move"></div>
+        <div class="loading__box loading__box--rotate">
+          <div></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+          <div class="loading__square loading__square--rotate"></div>
+        </div>
+      </div>
+      <p class="loading__description">Loading</p>
+    </div>
+
+
+    <!-- Background -->
+    <div class="background">
+      <video class="background__video" playsinline muted autoplay loop>
+        <source src="https://blahiple.github.io/cordingIntermediate3/asset/video/bg_movie.mp4" type="video/mp4">
+      </video>
+    </div>
+    <audio id="my-audio" loop>
+      <source src="https://blahiple.github.io/cordingIntermediate3/asset/audio/cinematic-melody-main-9785.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__top">
+        <a href="https://blahiple.github.io/cordingIntermediate3/top.html"><img class="header__logo" src="https://blahiple.github.io/cordingIntermediate3/asset/img/header/Necopon_games.webp" alt="Necopon games"></a>
+        <nav class="header__nav">
+          <ul class="header__group">
+            <li><a class="header__link" href="#story">STORY</a></li>
+            <li><a class="header__link" href="#trailer">TRAILER</a></li>
+          </ul>
+          <a class="header__playlink" href="#">PLAY NOW</a>
+        </nav>
+      </div>
+      <div class="header__bottom">
+        <button class="header__sound-button" onclick="toggleAudio()">
+          <span class="header__sound-content header__sound-content--off">
+            <span class="header__sound">SOUND OFF</span>
+            <img class="header__sound-icon" src="https://blahiple.github.io/cordingIntermediate3/asset/img/header/audio.webp" alt="">
+          </span>
+          <span class="header__sound-content header__sound-content--on header__sound-content--hide">
+            <span class="header__sound header__sound--on">SOUND ON</span>
+            <img class="header__sound-icon" src="https://blahiple.github.io/cordingIntermediate3/asset/img/header/audio_active.webp" alt="">
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Visual -->
+    <section class="mvisual">
+      <div class="mvisual__container">
+        <div class="mvisual__title-container">
+          <p class="mvisual__pretitle">VR GAME</p>
+          <h1 class="mvisual__title">Planet Hunters</h1>
+          <p class="mvisual__subtitle">惑星を奪還せよ</p>
+          <a class="mvisual__playlink" href="#">PLAY NOW</a>
+        </div>
+        <div class="mvisual__anounce-container">
+          <div class="mvisual__anounce-move">
+            <p class="mvisual__anounce">30.02.20</p>
+            <p class="mvisual__anounce mvisual__anounce--blue">バージョン5.6リリース：アバター・アイ</p>
+          </div>
+        </div>
+        <div class="mvisual__scroll-container">
+          <p class="mvisual__scroll">Scroll</p>
+          <div class="mvisual__scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="story">
+      <div class="story__container-outer"></div>
+      <div class="story__container">
+        <div class="story__item">
+          <div class="story__content">
+            <h2 class="story__title">STORY</h2>
+            <h3 class="story__subtitle">奪われた故郷の星を取り戻せ 壮大なSFファンタジー</h3>
+            <p class="story__description">銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！</p>
+          </div>
+          <div class="story__img-container">
+            <img class="story__img" src="https://blahiple.github.io/cordingIntermediate3/asset/img/story/story_01.webp" alt="">
+          </div>
+        </div>
+        <div class="story__item">
+          <div class="story__content">
+            <h3 class="story__subtitle story__subtitle--width">隠された陰謀を暴け 衝撃的な事実に驚愕</h3>
+            <p class="story__description">ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。<br class="story__br">チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......</p>
+          </div>
+          <div class="story__img-container story__img-container--shadow-l">
+            <img class="story__img" src="https://blahiple.github.io/cordingIntermediate3/asset/img/story/story_02.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="story__container-outer story__container-outer--bottom"></div>
+    </section>
+
+    <!-- Link -->
+    <section class="link">
+      <h2 class="link__title">ARE YOU READY TO FIGHT?</h2>
+      <a class="link__playlink" href="#">PLAY NOW</a>
+    </section>
+
+    <!-- Trailer -->
+    <section id="trailer" class="trailer">
+      <div class="trailer__container-outer"></div>
+      <div class="trailer__container">
+        <div class="trailer__container-inner">
+          <h2 class="trailer__title">TRAILER</h2>
+          <div class="trailer__video-container">
+            <div class="trailer__video-frame">
+              <iframe class="trailer__video" src="https://www.youtube.com/embed/RO_RRKTYzUY?si=lUCdxfekbCj2Upcz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trailer__container-outer trailer__container-outer--bottom"></div>
+    </section>
+
+    <!-- Link -->
+    <section class="link link--padding">
+      <h2 class="link__title">ARE YOU READY TO FIGHT?</h2>
+      <a class="link__playlink link__playlink--margin" href="#">PLAY NOW</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container-outer"></div>
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <ul class="footer__group">
+            <li class="p-newsContent__snsItem">
+              <div
+                class="fb-like"
+                data-href="#"
+                data-width=""
+                data-layout="button_count"
+                data-action=""
+                data-size="large"
+                data-share="true">
+              </div>
+            </li>
+            <li class="p-newsContent__snsItem">
+              <a
+                href="#"
+                class="twitter-share-button"
+                data-size="large"
+                data-lang="ja"
+                data-show-count="false">Tweet</a>
+            </li>
+            <li class="p-newsContent__snsItem">
+              <div
+                class="line-it-button"
+                data-lang="ja"
+                data-type="share-b"
+                data-env="REAL"
+                data-url="#"
+                data-color="default"
+                data-size="small"
+                data-count="false"
+                data-ver="3"
+                style="display: none;">
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <small class="footer__copyright">©Necopon games</small>
+        <a class="footer__playlink" href="#">PLAY NOW</a>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+
+    <!-- facebook button -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0" nonce="yb6TYxF0"></script>
+
+    <!-- twitter button -->
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+
+    <!-- line button -->
+    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+
+    <!-- my js -->
+    <script src="https://blahiple.github.io/cordingIntermediate3/js/main.js"></script>
+  </body>
+
+</html>
